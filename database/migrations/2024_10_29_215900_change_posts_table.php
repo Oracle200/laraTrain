@@ -12,8 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('posts', function (Blueprint $table) {
-			$table->string('title');
-			$table->text('desc');
+			//$table->string('title');
+			//$table->text('desc');
+
+            //$table->string('title', 100)->change();
+
+            //$table->dropColumn(['name', 'desc']);
+
+            //$table->renameColumn('name', 'titleee');
+
+
         });
     }
 
