@@ -13,8 +13,11 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('text');
+            $table->string('title');
+            $table->string('slug');
+            $table->integer('likes');
+            $table->datetime('created_at');
+            $table->datetime('updated_at');
         });
     }
 
