@@ -38,5 +38,5 @@ Route::prefix('user')->group(function() {
 
 Route::prefix('city')->group(function() {
     Route::get('/', [CityController::class, 'show']);
-    Route::get('/{user}', [CityController::class, 'show']);
+    Route::get('/{city?}', [CityController::class, 'show']);
 });

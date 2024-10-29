@@ -8,7 +8,7 @@ class PostController extends Controller
 	{
 		return view('post.show', [
 			'title' => 'POST',
-			'text' => 'page content'
+			'isAuth' => true
 		]);
 	}
 }
